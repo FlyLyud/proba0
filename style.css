@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.row::after{
+    content:"" ;
+    display: block;
+    clear: both;
+}
+.col{
+    color: white;
+    padding: 25px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.col-1{
+    background-color: tomato;
+}
+.col-2{
+    background-color:aquamarine;
+}
+.col-3{
+    background-color:burlywood;
+}
+.col-4{
+    background-color: darkmagenta;
+}
+/* tablet */
+@media(min-width:768px){
+    .col{
+        width: 50%;
+        float: left;
+    }
+}
+/* laptop */
+@media(min-width:1024px){
+    .col{
+        width: 25%;
+        float: left;
+    }
+}
